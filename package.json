@@ -1,0 +1,27 @@
+{
+  "name": "goit-js-hw-10-food-service1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prodanserega/goit-js-hw-10-food-service1.git"
+  },
+  "keywords": [],
+  "author": "Sergei Prodan <prodanserega1995@mail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prodanserega/goit-js-hw-10-food-service1/issues"
+  },
+  "homepage": "https://github.com/prodanserega/goit-js-hw-10-food-service1#readme",
+  "dependencies": {
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
