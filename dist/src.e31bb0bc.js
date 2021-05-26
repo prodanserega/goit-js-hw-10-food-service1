@@ -117,8 +117,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/tamplates/menu.hbs":[function(require,module,exports) {
-module.exports = "/menu.85669e72.hbs";
+})({"tamplates/menu.hbs":[function(require,module,exports) {
+module.exports = "/menu.beb665c3.hbs";
 },{}],"menu.json":[function(require,module,exports) {
 module.exports = [{
   "id": "XWaQXcbk0",
@@ -177,19 +177,19 @@ module.exports = [{
   "price": 240,
   "ingredients": ["Круглый рис", "Мини цукини", "Тертый имбирь", "Грибы шиитаке", "Соевый соус", "Кунжутное масло"]
 }];
-},{}],"src/index.js":[function(require,module,exports) {
+},{}],"index.js":[function(require,module,exports) {
 "use strict";
 
-var _menu = _interopRequireDefault(require("../src/tamplates/menu.hbs"));
+var _menu = _interopRequireDefault(require("./tamplates/menu.hbs"));
 
-var _menu2 = _interopRequireDefault(require("../menu.json"));
+var _menu2 = _interopRequireDefault(require("./menu.json"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var galleryRef = document.querySelector('.js-menu');
 var markUp = (0, _menu.default)(_menu2.default);
 galleryRef.insertAdjacentHTML('beforeend', markUp);
-},{"../src/tamplates/menu.hbs":"src/tamplates/menu.hbs","../menu.json":"menu.json"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./tamplates/menu.hbs":"tamplates/menu.hbs","./menu.json":"menu.json"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63920" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59547" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -393,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.js"], null)
-//# sourceMappingURL=/src.a2b27638.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+//# sourceMappingURL=/src.e31bb0bc.js.map

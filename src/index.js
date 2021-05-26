@@ -1,7 +1,8 @@
-import menu from '../menu.json';
-import itemsMenu from '../src/tamplates/menu.hbs';
+import itemsMenu from './tamplates/menu.hbs';
+import menu from './menu.json';
+
 
 const galleryRef = document.querySelector('.js-menu')
 
-const markup = itemsMenu(menu)
-galleryRef.insertAdjacentHTML('beforeend', markup)
+const markUp = itemsMenu(menu)
+galleryRef.insertAdjacentHTML('beforeend', markUp)
