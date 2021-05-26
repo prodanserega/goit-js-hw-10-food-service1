@@ -117,9 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"tamplates/menu.hbs":[function(require,module,exports) {
-module.exports = "/menu.beb665c3.hbs";
-},{}],"menu.json":[function(require,module,exports) {
+})({"menu.json":[function(require,module,exports) {
 module.exports = [{
   "id": "XWaQXcbk0",
   "name": "Картофель, запеченный в мундире",
@@ -177,19 +175,21 @@ module.exports = [{
   "price": 240,
   "ingredients": ["Круглый рис", "Мини цукини", "Тертый имбирь", "Грибы шиитаке", "Соевый соус", "Кунжутное масло"]
 }];
+},{}],"tamplates/menu.hbs":[function(require,module,exports) {
+module.exports = "/menu.beb665c3.hbs";
 },{}],"index.js":[function(require,module,exports) {
 "use strict";
 
-var _menu = _interopRequireDefault(require("./tamplates/menu.hbs"));
+var _menu = _interopRequireDefault(require("./menu.json"));
 
-var _menu2 = _interopRequireDefault(require("./menu.json"));
+var _menu2 = _interopRequireDefault(require("./tamplates/menu.hbs"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var galleryRef = document.querySelector('.js-menu');
-var markUp = (0, _menu.default)(_menu2.default);
+var markUp = (0, _menu2.default)(_menu.default);
 galleryRef.insertAdjacentHTML('beforeend', markUp);
-},{"./tamplates/menu.hbs":"tamplates/menu.hbs","./menu.json":"menu.json"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./menu.json":"menu.json","./tamplates/menu.hbs":"tamplates/menu.hbs"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
